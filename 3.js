@@ -209,8 +209,21 @@ let newArray = [];
 
 for (let i = 0; i < vegetables.length; i++) {
   let a = vegetables[i].length
-  console.log(a)
-  newArray.push('Слово - ' + vegetables[i] + ', ' + 'Длинна слова - ' + a)
+  newArray.push({word: vegetables[i] , length: a})
 }
 console.log(newArray);
+ 
+for (let i = 0; i < newArray.length; i++) {
+console.log(newArray[i].word + ' - ' + newArray[i].length)
+}
 
+
+
+
+
+
+
+
+
+
+ // newArray.push('Слово - ' + vegetables[i] + ', ' + 'Длинна слова - ' + a)
