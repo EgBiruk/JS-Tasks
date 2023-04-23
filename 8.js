@@ -33,7 +33,9 @@ lis.forEach(item => {
 
 // Задание 3
 // Поменять имена в списке выше на числа от 0 по порядку (0, 1, 2 и т.д.)
-
+lis.forEach((item, index) => {
+    item.innerText = index;
+})
 
 // Задание 4
 // Создать с помощью js абзац (тег p). Добавить в
@@ -169,9 +171,10 @@ newDiv.appendChild(link);
 // element.remove().
 // ВАЖНО: Вам нужно удалять не всю коллекцию li, а каждый отдльный li
 
-let element = document.querySelector('.forRemove');
-element.remove()
+let elements = document.querySelectorAll('.forRemove');
+console.log(elements);
 
+elements.forEach(item => item.remove());
 
 // Задание 11*
 // Создать массив объектов с полями name, age. Например:
